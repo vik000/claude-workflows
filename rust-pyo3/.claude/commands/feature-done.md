@@ -21,10 +21,11 @@ Steps:
    If the user does not answer, default to patch.
 4. Bump the version in BOTH Cargo.toml and pyproject.toml.
    Read the current version, increment the correct part, write it back.
-5. Commit all changes with a conventional commit message:
+5. Commit all changes. Use EXACTLY this commit message format, do not substitute 
+   your own format, do not use conventional commits format:
 ```bash
    git add -A
-   git commit -m "feat(epic-N): Feature X.Y — [feature name] (vX.X.X)"
+   git commit -m "CLOSES: Feature X.Y — [feature name] (vX.X.X) Closes #"
 ```
 6. Close the corresponding GitHub issue:
 ```bash
